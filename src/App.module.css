@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  height: 100vh;
+  background-color: var(--body-background-color);
+}
+
+.container.dark-mode {
+  background-color: var(--body-background-color-dark);
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+}
+
+.switch-mode-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: auto !important;
+}

@@ -1,0 +1,12 @@
+.groups {
+  max-height: 315px;
+}
+
+.no-tasks-msg {
+  text-align: center;
+  padding: 40px 0 30px 0;
+}
+
+.no-tasks-msg.dark-mode {
+  color: #fff;
+}

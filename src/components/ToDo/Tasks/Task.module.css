@@ -1,0 +1,52 @@
+.task {
+  position: relative;
+  padding: 15px 15px 5px 45px;
+  border-bottom: 1px solid var(--task-border-color-light);
+  cursor: pointer;
+}
+
+.task.dark-mode {
+  border-bottom: 1px solid var(--task-border-color-dark);
+}
+
+.task:last-of-type {
+  border: none;
+}
+
+.task:hover {
+  background-color: var(--task-hover-bg-light);
+}
+
+.task.dark-mode:hover {
+  background-color: var(--task-hover-bg-dark);
+}
+
+.task.dark-mode .task-title {
+  color: #fff;
+}
+
+.task.done .task-title,
+.task.done .task-des {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.task-des {
+  display: block;
+  overflow: hidden;
+  margin-top: 8px;
+  color: var(--text-color-light);
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task.dark-mode .task-des {
+  color: var(--text-color-dark);
+}
+
+.check-box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}

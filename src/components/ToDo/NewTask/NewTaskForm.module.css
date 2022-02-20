@@ -1,0 +1,48 @@
+.form-body {
+  padding: 15px;
+  height: 315px;
+}
+
+.form-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: left;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-body.dark-mode label {
+  color: #fff;
+}
+
+.form-control input,
+.form-control textarea {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--task-border-color-light);
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+}
+
+.form-body.dark-mode input,
+.form-body.dark-mode textarea {
+  background-color: var(--tasks-background-dark);
+  color: #fff;
+  border: 1px solid var(--task-border-color-dark);
+}
+
+.form-control textarea {
+  height: 100px;
+  resize: none;
+}

@@ -1,0 +1,46 @@
+.check-box-outer {
+  overflow: hidden;
+  background: var(--task-border-color-light);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.check-box-outer.dark-mode {
+  background: var(--task-border-color-dark);
+}
+
+.check-box-outer.checked,
+.check-box-outer:hover {
+  background: linear-gradient(130deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.check-box-outer .check-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.check-box-outer.dark-mode .check-box-inner {
+  background: var(--tasks-background-dark);
+}
+
+.check-box-outer.checked .check-box-inner {
+  background: linear-gradient(130deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.check-box-icon {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.check-box-outer.checked .check-box-icon {
+  visibility: visible;
+}

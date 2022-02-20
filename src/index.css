@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --tasks-height: 360px;
+  --checkbox-size: 18px;
+  --background-img-height: 250px;
+  --todo-list-mar-top: 55px;
+  --todo-list-width: 500px;
+
+  --body-background-color: hsl(0, 0%, 97%);
+  --body-background-color-dark: hsl(235, 21%, 11%);
+
+  --tasks-background-dark: hsl(235, 24%, 19%);
+
+  --sub-bg-color-light: hsl(254, 81%, 71%);
+  --sub-bg-color-dark: hsl(285, 62%, 33%);
+
+  --text-color-light: hsl(235, 19%, 35%);
+  --text-color-dark: hsl(233, 11%, 84%);
+
+  --task-hover-bg-light: hsl(0, 0%, 92%);
+  --task-hover-bg-dark: hsl(235, 19%, 35%);
+
+  --tasks-filter-hover-bg-light: hsl(0, 0%, 92%);
+  --tasks-filter-hover-bg-dark: hsl(235, 19%, 35%);
+
+  --task-border-color-light: hsl(0, 0%, 92%);
+  --task-border-color-dark: hsl(235, 19%, 35%);
+
+  --task-in-details-bg-overlay-light: hsla(0, 0%, 92%, 0.9);
+  --task-in-details-bg-overlay-dark: hsl(235, 19%, 35%, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Josefin Sans';
+}
+
+.overflow-auto {
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}

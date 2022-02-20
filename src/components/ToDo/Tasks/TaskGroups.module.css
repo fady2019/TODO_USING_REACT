@@ -1,0 +1,16 @@
+.tasks-group:not(:last-of-type) {
+  border-bottom: 1px solid var(--task-border-color-light);
+}
+
+.tasks-group.dark-mode:not(:last-of-type) {
+  border-bottom: 1px solid var(--task-border-color-dark);
+}
+
+.tasks-group .group-date {
+  padding: 15px 15px 0px 15px;
+  text-align: center;
+}
+
+.tasks-group.dark-mode .group-date {
+  color: #fff;
+}

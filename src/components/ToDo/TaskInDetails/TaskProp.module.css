@@ -1,0 +1,28 @@
+.task-prop {
+  padding: 15px 15px 5px 15px;
+  border-bottom: 1px solid var(--task-border-color-light);
+}
+
+.task-prop.dark-mode {
+  border-bottom: 1px solid var(--task-border-color-dark);
+}
+
+.task-prop:last-of-type {
+  border: none;
+}
+
+.task-prop.dark-mode .prop-key {
+  color: #fff;
+}
+
+.prop-value {
+  display: block;
+  overflow: hidden;
+  margin-top: 8px;
+  color: var(--text-color-light);
+  font-size: 14px;
+}
+
+.task-prop.dark-mode .prop-value {
+  color: var(--text-color-dark);
+}
